@@ -13,16 +13,16 @@ import android.util.Log;
 
 public class MainMenu extends AppCompatActivity {  //extends Activity class
 
-    private static final String TAG ="gymladMessage"    //log tag, logs the current state of the activity/app.
-    //FIrst calls the method called onCreate when you begin the app
+    private static final String TAG ="gymladMessage";    //log tag, logs the current state of the activity/app.
+    //First calls the method called onCreate when you begin the app
     //might also have onDestroy method so when you close the app, it saves the current data, uploads to the database and so on
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_menu);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_profile);
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
         Log.i(MainMenu.TAG, "onCreate");
     }
 
