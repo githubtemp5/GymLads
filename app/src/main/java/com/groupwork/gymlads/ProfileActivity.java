@@ -1,5 +1,6 @@
 package com.groupwork.gymlads;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,10 +11,16 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.util.Log;
+import android.widget.Button;
+import android.widget.EditText;
+
+import java.sql.SQLOutput;
 
 public class ProfileActivity extends AppCompatActivity {  //extends Activity class
 
-    private static final String TAG ="gymladMessage";    //log tag, logs the current state of the activity/app.
+    private static final String TAG ="gymladMessage";    //log tag, logs the current
+    private EditText fullNameTextBox, emailTextBox, ageTextBox, genderTextBox, weightTextBox, heightTextBox;
+    // state of the activity/app.
     //First calls the method called onCreate when you begin the app
     //might also have onDestroy method so when you close the app, it saves the current data, uploads to the database and so on
 
@@ -24,8 +31,57 @@ public class ProfileActivity extends AppCompatActivity {  //extends Activity cla
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
         Log.i(ProfileActivity.TAG, "onCreate");
+
+        //Intialising text boxes
+
+        fullNameTextBox = (EditText) findViewById(R.id.fullNameTextBox);
+
+        emailTextBox = (EditText) findViewById(R.id.emailTextBox);
+
+        ageTextBox = (EditText) findViewById(R.id.ageTextBox);
+
+        genderTextBox = (EditText) findViewById(R.id.genderTextBox);
+
+        weightTextBox = (EditText) findViewById(R.id.weightTextBox);
+
+        heightTextBox = (EditText) findViewById(R.id.heightTextBox);
+
+
+        //Update Details Button
+        Button updButton = (Button) findViewById(R.id.updateButton);
+
+        updButton.setOnClickListener(
+            new Button.OnClickListener(){
+                public void onClick(View v){
+        validateDetails();
+
+
+                }
+            }
+        );
+
     }
 
+    public void validateDetails(){
+        String fullName = fullNameTextBox.getText().toString();
+        String email = emailTextBox.getText().toString();
+//        int age = Integer.parseInt(ageTextBox.getText().toString());
+        String gender = genderTextBox.getText().toString();
+       // int weight = Integer.parseInt(weightTextBox.getText().toString());
+       // double height = Double.parseDouble(heightTextBox.getText().toString());
+
+        if(fullName.matches("[aA-zZ]+ ([aA-zZ]+ )*[aA-zZ]+")){
+            System.out.println("VALID NAME");
+        }
+
+        if(email.matches("[aA0-zZ9.]+@[aA-zZ].[aA-zZ]+(.[aA-zZ]+)*")){
+            System.out.println("VALID EMAIL");
+        }
+
+
+
+
+    }
     @Override
     protected void onStart() {
         super.onStart();

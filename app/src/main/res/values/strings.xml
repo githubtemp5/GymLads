@@ -13,4 +13,5 @@
     <string name="Weight_Text_Box" />
     <string name="Height_Label">Height</string>
     <string name="Height_Input_Box" />
+    <string name="Update_Button">Update Details</string>
 </resources>

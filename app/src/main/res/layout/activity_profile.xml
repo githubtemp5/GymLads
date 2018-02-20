@@ -10,8 +10,9 @@
     <android.support.v7.widget.GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.179"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -46,7 +47,7 @@
             android:layout_width="293dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textEmailAddress"
             android:text="@string/Email_Input_Box"
             app:layout_column="0"
             app:layout_row="3" />
@@ -64,7 +65,7 @@
             android:layout_width="293dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:text="@string/Age_Input_Box"
             app:layout_column="0"
             app:layout_row="5" />
@@ -100,7 +101,7 @@
             android:layout_width="293dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:text="@string/Weight_Text_Box"
             app:layout_column="0"
             app:layout_row="9" />
@@ -118,10 +119,25 @@
             android:layout_width="293dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberDecimal"
             android:text="@string/Height_Input_Box"
             app:layout_column="0"
             app:layout_row="11" />
 
+        <Button
+            android:id="@+id/updateButton"
+            style="@android:style/Widget.Button"
+            android:layout_width="126dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="115dp"
+            android:text="@string/Update_Button"
+            app:layout_column="0"
+            app:layout_row="12"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="408dp" />
+
     </android.support.v7.widget.GridLayout>
+
 </android.support.constraint.ConstraintLayout>
