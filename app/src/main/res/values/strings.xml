@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">GymLads</string>
     <string name="action_settings">Settings</string>
+    <string name="Full_Name_Label">Full Name</string>
+    <string name="Full_Name_Input_Box" />
+    <string name="Email_Label">Email</string>
+    <string name="Email_Input_Box" />
+    <string name="Age_Label">Age</string>
+    <string name="Age_Input_Box" />
+    <string name="Gender">Gender</string>
+    <string name="Gender_Text_Box" />
+    <string name="Weight_Label">Weight</string>
+    <string name="Weight_Text_Box" />
+    <string name="Height_Label">Height</string>
+    <string name="Height_Input_Box" />
 </resources>
