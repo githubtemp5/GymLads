@@ -65,18 +65,24 @@ public class ProfileActivity extends AppCompatActivity {  //extends Activity cla
     public void validateDetails(){
         String fullName = fullNameTextBox.getText().toString();
         String email = emailTextBox.getText().toString();
-//        int age = Integer.parseInt(ageTextBox.getText().toString());
+        int age = Integer.parseInt(ageTextBox.getText().toString());
         String gender = genderTextBox.getText().toString();
        // int weight = Integer.parseInt(weightTextBox.getText().toString());
        // double height = Double.parseDouble(heightTextBox.getText().toString());
 
-        if(fullName.matches("[aA-zZ]+ ([aA-zZ]+ )*[aA-zZ]+")){
+        if(fullName.matches("[a-zA-Z]+ ([a-zA-Z]+ )*[a-zA-Z]+")){
             System.out.println("VALID NAME");
         }
 
-        if(email.matches("[aA0-zZ9.]+@[aA-zZ].[aA-zZ]+(.[aA-zZ]+)*")){
+        if(email.matches("[a-zA-Z0-9]+(.[a-zA-Z0-9]+)*@[a-zA-Z].[a-zA-Z]+(.[a-zA-Z]+)*")){
             System.out.println("VALID EMAIL");
         }
+
+        if(age>=15 && age<=150){
+            System.out.println("VALID AGE");
+        }
+
+        
 
 
 
