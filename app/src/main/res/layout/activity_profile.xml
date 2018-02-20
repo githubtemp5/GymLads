@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ccff99"
+    android:background="#666699"
     tools:context="com.groupwork.gymlads.ProfileActivity">
 
     <android.support.v7.widget.GridLayout
@@ -16,13 +16,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/1"
+            android:id="@+id/fullNameLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Full_Name_Label" />
 
         <EditText
-            android:id="@+id/2"
+            android:id="@+id/fullNameTextBox"
             android:layout_width="295dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -34,7 +34,7 @@
             tools:layout_editor_absoluteY="16dp" />
 
         <TextView
-            android:id="@+id/3"
+            android:id="@+id/emailLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Email_Label"
@@ -42,7 +42,7 @@
             app:layout_row="2" />
 
         <EditText
-            android:id="@+id/4"
+            android:id="@+id/emailTextBox"
             android:layout_width="293dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -52,7 +52,7 @@
             app:layout_row="3" />
 
         <TextView
-            android:id="@+id/5"
+            android:id="@+id/ageLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Age_Label"
@@ -60,7 +60,7 @@
             app:layout_row="4" />
 
         <EditText
-            android:id="@+id/6"
+            android:id="@+id/ageTextBox"
             android:layout_width="293dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -70,7 +70,7 @@
             app:layout_row="5" />
 
         <TextView
-            android:id="@+id/7"
+            android:id="@+id/genderLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Gender"
@@ -78,7 +78,7 @@
             app:layout_row="6" />
 
         <EditText
-            android:id="@+id/8"
+            android:id="@+id/genderTextBox"
             android:layout_width="293dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -88,7 +88,7 @@
             app:layout_row="7" />
 
         <TextView
-            android:id="@+id/9"
+            android:id="@+id/weightLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Weight_Label"
@@ -96,7 +96,7 @@
             app:layout_row="8" />
 
         <EditText
-            android:id="@+id/10"
+            android:id="@+id/weightTextBox"
             android:layout_width="293dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -106,7 +106,7 @@
             app:layout_row="9" />
 
         <TextView
-            android:id="@+id/11"
+            android:id="@+id/heightLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Height_Label"
@@ -114,7 +114,7 @@
             app:layout_row="10" />
 
         <EditText
-            android:id="@+id/12"
+            android:id="@+id/heightTextBox"
             android:layout_width="293dp"
             android:layout_height="wrap_content"
             android:ems="10"
