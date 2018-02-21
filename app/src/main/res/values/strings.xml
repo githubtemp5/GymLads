@@ -7,11 +7,15 @@
     <string name="Email_Input_Box" />
     <string name="Age_Label">Age</string>
     <string name="Age_Input_Box" />
-    <string name="Gender">Gender</string>
-    <string name="Gender_Text_Box" />
-    <string name="Weight_Label">Weight</string>
+    <string name="Gender_Label">Gender</string>
+    <string name="Weight_Label">Weight(kg)</string>
     <string name="Weight_Text_Box" />
-    <string name="Height_Label">Height</string>
+    <string name="Height_Label">Height(cm)</string>
     <string name="Height_Input_Box" />
     <string name="Update_Button">Update Details</string>
+    <string-array name = "gender_list">
+        <item>Other</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 </resources>

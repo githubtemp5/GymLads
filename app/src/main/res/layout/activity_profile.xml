@@ -8,8 +8,8 @@
     tools:context="com.groupwork.gymlads.ProfileActivity">
 
     <android.support.v7.widget.GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="292dp"
+        android:layout_height="457dp"
         android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.179"
@@ -74,17 +74,16 @@
             android:id="@+id/genderLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Gender"
+            android:text="@string/Gender_Label"
             app:layout_column="0"
             app:layout_row="6" />
 
-        <EditText
-            android:id="@+id/genderTextBox"
-            android:layout_width="293dp"
+        <Spinner
+            android:id="@+id/genderList"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/Gender_Text_Box"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
             app:layout_column="0"
             app:layout_row="7" />
 
