@@ -1,0 +1,15 @@
+User
+userid, username, FullName, Email, Password, Age, Weight, Gender, Height
+
+Exercise/Exercise
+Exerciseid, Agelimit, Time, Extended Information, Groups
+
+
+
+Plan
+PlanID, mondaySession, TuesdaySession, 
+
+Session
+sessionId, ExercisesInThesession,  
+
+Workout
