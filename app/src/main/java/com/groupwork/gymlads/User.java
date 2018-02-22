@@ -5,7 +5,7 @@ package com.groupwork.gymlads;
  */
 
 
-public class User() {
+public class User {
 private String userName ;
 
     public User(String userName, String fullName, String gender){

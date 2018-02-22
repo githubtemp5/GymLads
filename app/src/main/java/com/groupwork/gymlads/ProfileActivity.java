@@ -42,6 +42,7 @@ public class ProfileActivity extends AppCompatActivity {  //extends Activity cla
         heightTextBox = findViewById(R.id.heightTextBox);
 
 
+        //Adding the specified options for the dropdown to the Spinner
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.gender_list, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         genderDropdown.setAdapter(adapter);
@@ -62,7 +63,17 @@ public class ProfileActivity extends AppCompatActivity {  //extends Activity cla
         );
 
     }
+    public void retreiveAndDisplayInfoFromDB(){
 
+
+    }
+
+    public void uploadDetailsToTheDB(){
+
+
+    }
+
+    //This methood grabs the user details currently displayed in the userGUI and if any changes are made to it, provides an option to update the information in the database.
     public boolean retrieveAndValidateDetails(){
         boolean fullNameCheck=false;
         boolean emailCheck=false;
@@ -124,7 +135,7 @@ public class ProfileActivity extends AppCompatActivity {  //extends Activity cla
             heightCheck = true;
         }
 
-
+        //if all the input checks are valid then it returns a true value otherwise a false.
         System.out.println(fullNameCheck && emailCheck && ageCheck && weightCheck && heightCheck);
         return fullNameCheck && emailCheck && ageCheck && weightCheck && heightCheck;
 
