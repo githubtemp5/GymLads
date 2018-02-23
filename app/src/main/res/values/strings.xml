@@ -13,7 +13,7 @@
     <string name="Height_Label">Height(cm)</string>
     <string name="Height_Input_Box" />
     <string name="Update_Button">Update Details</string>
-    <string-array name = "gender_list">
+    <string-array name="gender_list">
         <item>Other</item>
         <item>Male</item>
         <item>Female</item>

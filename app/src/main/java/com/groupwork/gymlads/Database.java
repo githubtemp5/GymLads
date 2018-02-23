@@ -25,16 +25,18 @@ public class Database {
 
     public void run(){
 
-        String url = "jdbc:mysql://35.195.212.24:3306/";
+        String url = "jdbc:mysql://35.205.75.211:3306/";
         String dbName = "up826133";
         String userName = "android";
         try {
             Class.forName("java.sql.Driver");
             Connection conn = DriverManager.getConnection(url+dbName, userName, "Mysql123");
 
-            Statement st = conn.createStatement();
-            ResultSet rs = st.executeQuery("SELECT * FROM TEST");
+            Statement st = conn.createStatement("SELECT * FROM TEST");
+            ResultSet rs = st.executeQuery(st);
+            System.out.println("HERE");
             while(rs.next()){
+                System.out.println("here");
                 System.out.println(rs.getString("testId"));
 
             }
