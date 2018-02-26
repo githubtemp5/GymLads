@@ -5,14 +5,12 @@ import android.provider.ContactsContract;
 
 
 import org.mariadb.jdbc.*;
+
+import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Scanner;
-
-
-
 
 
 /**
@@ -20,7 +18,7 @@ import java.util.Scanner;
  */
 
 public class Database implements DatabaseInterface {
-    private MarioaConnection conn;
+    private Connection conn;
     private String url;
     private String dbName;
     private String username;
