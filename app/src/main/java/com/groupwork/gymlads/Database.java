@@ -4,10 +4,10 @@ import android.content.Context;
 import android.provider.ContactsContract;
 
 
-import org.mariadb.jdbc.Driver;
+//import org.mariadb.jdbc.Driver;
 
-import org.mariadb.jdbc.MariaDbConnection;
-import org.mariadb.jdbc.MariaDbStatement;
+//import org.mariadb.jdbc.MariaDbConnection;
+//import org.mariadb.jdbc.MariaDbStatement;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -71,10 +71,11 @@ public class Database implements DatabaseInterface {
         try{
             Class.forName("org.mariadb.jdbc.Driver").newInstance();
             conn = DriverManager.getConnection(url+dbName, username, password);
+
             System.out.println("Connection established");
         }
         catch(Exception e){
-            System.out.println("Error");
+            System.out.println(e.getMessage());
         }
     }
 
@@ -118,7 +119,7 @@ public class Database implements DatabaseInterface {
 
     public static void main(String args[]){
         System.out.println("Enter the password");
-        Database databaseInstance = new Database("jdbc:mariadb://35.195.101.184:3306/", "up826133", "up826133", myScanner.nextLine());
+        Database databaseInstance = new Database("jdbc:mysql://35.205.125.83:3306/", "up826133", "android2", myScanner.nextLine());
         databaseInstance.establishConnection();
 
         //  ResultSet rs = databaseInstance.selectQuery("SELECT * FROM Test");
