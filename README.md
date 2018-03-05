@@ -1,5 +1,5 @@
 # GymLads
-Coursework
+Coursework GymLads
 
 TODO
 
