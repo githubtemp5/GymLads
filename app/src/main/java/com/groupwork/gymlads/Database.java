@@ -9,10 +9,9 @@ import android.provider.ContactsContract;
 //import org.mariadb.jdbc.MariaDbConnection;
 //import org.mariadb.jdbc.MariaDbStatement;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+
+import java.sql.*;
 import java.util.Scanner;
 
 
@@ -64,18 +63,15 @@ public class Database implements DatabaseInterface {
         return pass;
     }
 
-
-
-
     public void establishConnection(){
         try{
-            Class.forName("org.mariadb.jdbc.Driver").newInstance();
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
             conn = DriverManager.getConnection(url+dbName, username, password);
 
             System.out.println("Connection established");
         }
         catch(Exception e){
-            System.out.println(e.getMessage());
+            System.out.println("Error "+e.getMessage());
         }
     }
 
@@ -117,12 +113,20 @@ public class Database implements DatabaseInterface {
 
 
 
-    public static void main(String args[]){
-        System.out.println("Enter the password");
-        Database databaseInstance = new Database("jdbc:mysql://35.205.125.83:3306/", "up826133", "android2", myScanner.nextLine());
-        databaseInstance.establishConnection();
+    public static void main(String args[]) throws SQLException {
 
-        //  ResultSet rs = databaseInstance.selectQuery("SELECT * FROM Test");
+        System.out.println("Enter the password");
+        Database databaseInstance = new Database("jdbc:mysql://localhost:0/", "uni", "root", myScanner.nextLine());
+        databaseInstance.establishConnection();
+        ResultSet rs = databaseInstance.selectQuery("SELECT * FROM Test");
+
+//        MysqlDataSource ds = new MysqlDataSource();
+//        ds.setDatabaseName("uni");
+//        ds.setUser("root");
+//        ds.setPassword("Mysql123");
+//        ds.setServerName("localhost");
+//        ds.setPort(3306);
+//        Connection connection = ds.getConnection();
     }
 }
 
