@@ -7,6 +7,5 @@ package com.groupwork.gymlads;
 public class GeneratePlan {
     public GeneratePlan(User u){
 
-        
     }
 }
