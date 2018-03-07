@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 
 
-public class User {
+public class                                                                                                                                                                                                                                                                                                           User {
     private String userName;
     private String fullName;
     private String email;
