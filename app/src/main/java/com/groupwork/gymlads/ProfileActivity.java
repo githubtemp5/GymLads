@@ -1,5 +1,6 @@
 package com.groupwork.gymlads;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -8,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.VideoView;
 
 public class ProfileActivity extends AppCompatActivity {  //extends Activity class
 
@@ -56,7 +58,9 @@ public class ProfileActivity extends AppCompatActivity {  //extends Activity cla
             new Button.OnClickListener(){
                 public void onClick(View v){
                     retrieveAndValidateDetails();
-
+                    Intent a = new Intent(getApplicationContext(), VideosPage.class);
+                    a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(a);
 
                 }
             }
