@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GymLads.iml" filepath="$PROJECT_DIR$/GymLads.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clone.iml" filepath="$PROJECT_DIR$/clone.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewreport/viewreport.iml" filepath="$PROJECT_DIR$/viewreport/viewreport.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewreport2/viewreport2.iml" filepath="$PROJECT_DIR$/viewreport2/viewreport2.iml" />
     </modules>
