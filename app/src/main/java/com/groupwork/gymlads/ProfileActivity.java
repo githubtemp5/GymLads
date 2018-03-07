@@ -58,7 +58,7 @@ public class ProfileActivity extends AppCompatActivity {  //extends Activity cla
             new Button.OnClickListener(){
                 public void onClick(View v){
                     retrieveAndValidateDetails();
-                    Intent a = new Intent(getApplicationContext(), VideosPage.class);
+                    Intent a = new Intent(getApplicationContext(), MainMenu.class);
                     a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(a);
 
