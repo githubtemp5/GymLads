@@ -21,8 +21,9 @@ public class MainMenu extends AppCompatActivity {
         ImageButton planButton = (ImageButton) findViewById(R.id.imageButton);
         planButton.setOnClickListener(
                 new ImageButton.OnClickListener(){
+                    @Override
                     public void onClick(View v){
-                        Intent a = new Intent(getApplicationContext(), ProfileActivity.class);
+                        Intent a = new Intent(getApplicationContext(), com.groupwork.gymlads.ProfileActivity.class);
                         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(a);
                     }
