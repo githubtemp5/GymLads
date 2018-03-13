@@ -8,8 +8,8 @@
     tools:context="com.groupwork.gymlads.ProfileActivity">
 
     <android.support.v7.widget.GridLayout
-        android:layout_width="292dp"
-        android:layout_height="457dp"
+        android:layout_width="295dp"
+        android:layout_height="470dp"
         android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.179"
@@ -136,6 +136,13 @@
             app:layout_row="12"
             tools:layout_editor_absoluteX="129dp"
             tools:layout_editor_absoluteY="408dp" />
+
+        <TextView
+            android:id="@+id/profileErrorLabel"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            app:layout_column="0"
+            app:layout_row="14" />
 
     </android.support.v7.widget.GridLayout>
 
