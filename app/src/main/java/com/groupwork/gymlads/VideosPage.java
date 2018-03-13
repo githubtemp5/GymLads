@@ -39,12 +39,17 @@ public class VideosPage extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
                 videoView.suspend();
-                switch(position){
-                    case 0:
-                        videoView.setVideoURI(Uri.parse("android.resource://"+ getPackageName()+"/"+R.raw.sample_video_1));
-                    case 1:
-                        videoView.setVideoURI(Uri.parse("android.resource://"+ getPackageName()+"/"+R.raw.sample_video_2));
+                if(position==0){
+                    videoView.setVideoURI(Uri.parse("android.resource://"+ getPackageName()+"/"+R.raw.sample_video_1));
                 }
+                else if(position==1){
+                    videoView.setVideoURI(Uri.parse("android.resource://"+ getPackageName()+"/"+R.raw.sample_video_2));
+                }
+                else if(position==2){
+                    
+                }
+
+                System.out.println("HEREEEEEEEEEEE"+ position);
                 videoView.setMediaController(new MediaController(VideosPage.this));
                 videoView.requestFocus();
                 videoView.start();
