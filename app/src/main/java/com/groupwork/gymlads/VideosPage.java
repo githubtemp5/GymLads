@@ -46,7 +46,7 @@ public class VideosPage extends AppCompatActivity {
                     videoView.setVideoURI(Uri.parse("android.resource://"+ getPackageName()+"/"+R.raw.sample_video_2));
                 }
                 else if(position==2){
-                    
+
                 }
 
                 System.out.println("HEREEEEEEEEEEE"+ position);
