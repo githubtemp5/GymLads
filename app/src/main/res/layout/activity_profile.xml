@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666699"
+    tools:context="com.groupwork.gymlads.ProfileActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="295dp"
+        android:layout_height="470dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/fullNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Full_Name_Label" />
+
+        <EditText
+            android:id="@+id/fullNameTextBox"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/Full_Name_Input_Box"
+            app:layout_column="0"
+            app:layout_row="1"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Email_Label"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/emailTextBox"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="@string/Email_Input_Box"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/ageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Age_Label"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <EditText
+            android:id="@+id/ageTextBox"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/Age_Input_Box"
+            app:layout_column="0"
+            app:layout_row="5" />
+
+        <TextView
+            android:id="@+id/genderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Gender_Label"
+            app:layout_column="0"
+            app:layout_row="6" />
+
+        <Spinner
+            android:id="@+id/genderList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            app:layout_column="0"
+            app:layout_row="7" />
+
+        <TextView
+            android:id="@+id/weightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Weight_Label"
+            app:layout_column="0"
+            app:layout_row="8" />
+
+        <EditText
+            android:id="@+id/weightTextBox"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/Weight_Text_Box"
+            app:layout_column="0"
+            app:layout_row="9" />
+
+        <TextView
+            android:id="@+id/heightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Height_Label"
+            app:layout_column="0"
+            app:layout_row="10" />
+
+        <EditText
+            android:id="@+id/heightTextBox"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="@string/Height_Input_Box"
+            app:layout_column="0"
+            app:layout_row="11" />
+
+        <Button
+            android:id="@+id/updateButton"
+            style="@android:style/Widget.Button"
+            android:layout_width="126dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="115dp"
+            android:text="@string/Update_Button"
+            app:layout_column="0"
+            app:layout_row="12"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="408dp" />
+
+        <TextView
+            android:id="@+id/profileErrorLabel"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            app:layout_column="0"
+            app:layout_row="14" />
+
+    </android.support.v7.widget.GridLayout>
+
+</android.support.constraint.ConstraintLayout>
