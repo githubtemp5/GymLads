@@ -51,7 +51,7 @@ public class Register extends AppCompatActivity {
     }
 
     public void onSignupSuccess() {
-        Intent intent = new Intent(this, Plan.class);
+        Intent intent = new Intent(this, Session.class);
         startActivity(intent);
     }
 
