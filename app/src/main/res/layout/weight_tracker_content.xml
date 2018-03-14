@@ -7,7 +7,7 @@
     android:background="@android:color/holo_blue_dark"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.groupwork.gymlads.Weight_Tracker"
-    tools:showIn="@layout/Weight_tracker">
+    tools:showIn="@layout/weight_tracker">
 
     <EditText
         android:id="@+id/editText"
