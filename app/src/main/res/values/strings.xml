@@ -13,6 +13,11 @@
     <string name="Height_Label">Height(cm)</string>
     <string name="Height_Input_Box" />
     <string name="Update_Button">Update Details</string>
+    <string name="personalised_plan_label">Personalised Plan</string>
+    <string name="user_plan_label">User Plan</string>
+    <string name="user_profile_label">User Profile</string>
+    <string name="view_progress_report_label">View progress Report</string>
+    <string name="video_demonstration_label">Video Demonstration</string>
     <string-array name="gender_list">
         <item>Other</item>
         <item>Male</item>
