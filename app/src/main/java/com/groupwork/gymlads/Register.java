@@ -1,5 +1,6 @@
 package com.groupwork.gymlads;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -50,7 +51,8 @@ public class Register extends AppCompatActivity {
     }
 
     public void onSignupSuccess() {
-
+        Intent intent = new Intent(this, Plan.class);
+        startActivity(intent);
     }
 
     public boolean validate() {
