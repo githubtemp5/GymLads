@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class HomeScreen extends AppCompatActivity {
-    Button registerPageBtn, loginPageBtn;
+    Button registerPageBtn, loginPageBtn, skipBtn;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,13 @@ public class HomeScreen extends AppCompatActivity {
                 onLoginBtnClick();
             }
         });
+        skipBtn = (Button) findViewById(R.id.skipBtn);
+        skipBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onSkipBtnClick();
+            }
+        });
     }
 
     public void onRegBtnClick() {
@@ -42,6 +49,10 @@ public class HomeScreen extends AppCompatActivity {
     }
     public void onLoginBtnClick() {
         Intent intent = new Intent(this, Session.class);
+        startActivity(intent);
+    }
+    public void onSkipBtnClick() {
+        Intent intent = new Intent(this, MainMenu.class);
         startActivity(intent);
     }
 
