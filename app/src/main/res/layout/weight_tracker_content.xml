@@ -15,7 +15,7 @@
         android:layout_height="52dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="140dp"
         android:ems="10"
         android:hint="Enter Weight"
         android:inputType="textPersonName"
@@ -27,8 +27,9 @@
     <TextView
         android:id="@+id/tVcalories"
         android:layout_width="216dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="56dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="88dp"
         android:text="Calories Burned"
         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,8 +51,9 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_marginBottom="56dp"
-        android:layout_marginEnd="148dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="148dp"
         android:background="@color/colorAccent"
         android:text="UPDATE"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,8 +62,8 @@
     <TextView
         android:layout_width="189dp"
         android:layout_height="49dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginRight="108dp"
+        android:layout_marginTop="288dp"
         android:text="Calories Burned: 0"
         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
         app:layout_constraintEnd_toEndOf="parent"
