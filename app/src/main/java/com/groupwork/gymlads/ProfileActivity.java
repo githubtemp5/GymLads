@@ -61,11 +61,8 @@ public class ProfileActivity extends AppCompatActivity {  //extends Activity cla
                 public void onClick(View v){
 
                  String errorMessage = retrieveAndValidateDetails();
-                    Intent i = new Intent(getApplicationContext(), com.groupwork.gymlads.SessionGUI.class);
-                    i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    startActivity(i);
                  if(errorMessage.equals("")){
-                     errorLabel.setText("");
+                     errorLabel.setText("User Details Updated");
                  }
                  else{
                      errorLabel.setText(errorMessage);
