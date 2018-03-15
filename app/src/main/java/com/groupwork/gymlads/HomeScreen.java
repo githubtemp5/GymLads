@@ -48,11 +48,12 @@ public class HomeScreen extends AppCompatActivity {
         startActivity(intent);
     }
     public void onLoginBtnClick() {
-        Intent intent = new Intent(this, Session.class);
+        Intent intent = new Intent(this, MainMenu.class);
         startActivity(intent);
     }
     public void onSkipBtnClick() {
         Intent intent = new Intent(this, MainMenu.class);
+        ProfileActivity.loggedIn = false;
         startActivity(intent);
     }
 

@@ -38,9 +38,7 @@ public class MainMenu extends AppCompatActivity {
                 new ImageButton.OnClickListener(){
                     @Override
                     public void onClick(View v){
-
             }
-
         }
         );
 
@@ -55,7 +53,6 @@ public class MainMenu extends AppCompatActivity {
                     }
                 }
         );
-
     }
 
 //    public void initialise (){

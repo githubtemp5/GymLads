@@ -15,6 +15,7 @@ import android.widget.VideoView;
 public class ProfileActivity extends AppCompatActivity {  //extends Activity class
 
     private static final String TAG ="gymladMessage";    //log tag, logs the current
+    public static boolean loggedIn;
     private EditText fullNameTextBox, emailTextBox, ageTextBox, weightTextBox, heightTextBox;
     private Spinner genderDropdown;
     private Button updButton;
