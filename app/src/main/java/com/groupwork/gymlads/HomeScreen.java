@@ -17,8 +17,6 @@ public class HomeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         registerPageBtn = (Button) findViewById(R.id.registerPageBtn);
         registerPageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,14 +43,17 @@ public class HomeScreen extends AppCompatActivity {
 
     public void onRegBtnClick() {
         Intent intent = new Intent(this, Register.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
     public void onLoginBtnClick() {
         Intent intent = new Intent(this, MainMenu.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
     public void onSkipBtnClick() {
         Intent intent = new Intent(this, MainMenu.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         ProfileActivity.loggedIn = false;
         startActivity(intent);
     }

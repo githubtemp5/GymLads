@@ -14,6 +14,8 @@ public class MainMenu extends AppCompatActivity {
     private ImageButton userProfileButton;
     private ImageButton userPlanButton;
     private ImageButton videoDemButton;
+    private ImageButton weightTrackButton;
+    private ImageButton perPlanButton;
     //private ImageButton
 
     @Override
@@ -48,6 +50,30 @@ public class MainMenu extends AppCompatActivity {
                     @Override
                     public void onClick(View v){
                         Intent i = new Intent(getApplicationContext(), com.groupwork.gymlads.VideosPage.class);
+                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(i);
+                    }
+                }
+        );
+
+        weightTrackButton = (ImageButton) findViewById(R.id.weightTrackerButton);
+        weightTrackButton.setOnClickListener(
+                new ImageButton.OnClickListener(){
+                    @Override
+                    public void onClick(View v){
+                        Intent i = new Intent(getApplicationContext(), Weight_Tracker.class);
+                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(i);
+                    }
+                }
+        );
+
+        perPlanButton = (ImageButton) findViewById(R.id.personalisedPlanButton);
+        perPlanButton.setOnClickListener(
+                new ImageButton.OnClickListener(){
+                    @Override
+                    public void onClick(View v){
+                        Intent i = new Intent(getApplicationContext(), SessionGUI.class);
                         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(i);
                     }

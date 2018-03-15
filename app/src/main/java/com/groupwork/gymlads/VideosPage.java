@@ -30,7 +30,7 @@ public class VideosPage extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listView);
 
         videos.add("Push Up \n Hello this is a description for the exercise");
-        videos.add("Pull Up \n This exercise will help you alot for your your upper body strength.");
+        videos.add("Sit up \n Benefits:This exercise will help you alot for your your upper body strength. \n Risks: Full sit-ups may cause back pain and arching of the lower back, increasing the risk of back injury.");
         videos.add("Cyclying \n This exercise will help you with your abs and legs.");
 
         adapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1,videos);
@@ -40,16 +40,15 @@ public class VideosPage extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
                 videoView.suspend();
                 if(position==0){
-                    videoView.setVideoURI(Uri.parse("android.resource://"+ getPackageName()+"/"+R.raw.sample_video_1));
+                    videoView.setVideoURI(Uri.parse("android.resource://"+ getPackageName()+"/"+R.raw.video_squat));
                 }
                 else if(position==1){
-                    videoView.setVideoURI(Uri.parse("android.resource://"+ getPackageName()+"/"+R.raw.sample_video_2));
+                    videoView.setVideoURI(Uri.parse("android.resource://"+ getPackageName()+"/"+R.raw.video_sit_up));
                 }
                 else if(position==2){
 
                 }
 
-                System.out.println("HEREEEEEEEEEEE"+ position);
                 videoView.setMediaController(new MediaController(VideosPage.this));
                 videoView.requestFocus();
                 videoView.start();
