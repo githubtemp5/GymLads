@@ -22,7 +22,7 @@ public class personalisedPlan extends AppCompatActivity {
         setContentView(R.layout.activity_personalised_plan);
 
     }
-
+    //These are the updated headings for the excercises.
     public void updateLabels(String day){ 
         heading1 = (TextView) findViewById(R.id.heading1);
         heading11 = (TextView) findViewById(R.id.heading11);
@@ -44,6 +44,7 @@ public class personalisedPlan extends AppCompatActivity {
             heading23.setText("Skipping for 10 mins");
 
         }
+        //This shows the excercises the user must do
         else if (day.equals("tue")){ 
             heading1.setText("Leg Session 3sets of 15 reps");
             heading11.setText("Leg Raises");
