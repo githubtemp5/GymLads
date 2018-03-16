@@ -54,7 +54,7 @@ public class VideosPage extends AppCompatActivity {
                 videoView.setMediaController(new MediaController(VideosPage.this));
                 videoView.requestFocus();
                 videoView.start();
-
+// giving the user control over the video so they can pause or fast foward it 
             }
 
 
