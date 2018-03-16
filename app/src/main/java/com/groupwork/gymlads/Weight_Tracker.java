@@ -11,7 +11,7 @@ import java.util.ArrayList;
 /**
  * Created by up826133 on 15/03/2018.
  */
-
+//this is a listview pf the videos
 public class Weight_Tracker extends AppCompatActivity {
 
     VideoView videoView;
