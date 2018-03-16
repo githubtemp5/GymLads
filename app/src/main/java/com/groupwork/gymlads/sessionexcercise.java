@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 public class sessionexcercise extends AppCompatActivity {
-
+//This is just a building of toolbar so that the ID can be viewed
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
