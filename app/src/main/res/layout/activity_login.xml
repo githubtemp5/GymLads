@@ -74,12 +74,8 @@
             android:id="@+id/error_Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_below="@+id/signingInButton"
-            android:layout_marginLeft="23dp"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="48dp" />
+            android:layout_marginTop="23dp" />
 
     </RelativeLayout>
 
