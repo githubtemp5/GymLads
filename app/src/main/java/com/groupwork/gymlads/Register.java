@@ -23,6 +23,7 @@ public class Register extends AppCompatActivity {
     private String name, email, username, password, cpassword;
     public static ArrayList<String> usernames = new ArrayList<String>();
     Button regButton;
+    Button cancelButton;
     CheckBox termsCheckBox;
 
     @Override
@@ -54,10 +55,17 @@ public class Register extends AppCompatActivity {
     }
 
     public void onSignupSuccess() {
-        usernames.add(Register.this.et_username.getText().toString());
-        System.out.println(usernames.get(0));
-        Intent intent = new Intent(this, MainMenu.class);
-        startActivity(intent);
+        if(usernames.contains(Register.this.et_username.getText().toString())){
+            et_username.setError("This username already exists");
+
+        }
+        else {
+            usernames.add(Register.this.et_username.getText().toString());
+            System.out.println(usernames.get(0));
+            Intent intent = new Intent(this, MainMenu.class);
+            startActivity(intent);
+        }
+
     }
 
     public boolean validate() {
