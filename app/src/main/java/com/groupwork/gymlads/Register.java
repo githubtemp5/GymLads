@@ -15,11 +15,16 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 
 public class Register extends AppCompatActivity {
     private EditText et_name, et_email, et_username, et_password, et_cpassword;
     private String name, email, username, password, cpassword;
+    public static ArrayList<String> usernames = new ArrayList<String>();
+    public static ArrayList<String> passwords = new ArrayList<String>();
     Button regButton;
+    Button cancelButton;
     CheckBox termsCheckBox;
 
     @Override
@@ -32,14 +37,22 @@ public class Register extends AppCompatActivity {
         et_password = (EditText) findViewById(R.id.password);
         et_cpassword = (EditText) findViewById(R.id.cpassword);
         termsCheckBox = (CheckBox) findViewById(R.id.termsCheckBox);
+        cancelButton = (Button) findViewById(R.id.cancelButton);
+        cancelButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                cancel();
+        }
+        });
+
         regButton = (Button) findViewById(R.id.regButton);
         regButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 register();
             }
-        });
-    }
+
+    });}
 
     public void register() {
         initialise();
@@ -50,9 +63,29 @@ public class Register extends AppCompatActivity {
         }
     }
 
-    public void onSignupSuccess() {
-        Intent intent = new Intent(this, Session.class);
+    public void cancel(){
+        Intent intent = new Intent(this, HomeScreen.class);
         startActivity(intent);
+    }
+
+    public void onSignupSuccess() {
+        if(usernames.contains(Register.this.et_username.getText().toString())){
+            et_username.setError("This username already exists");
+
+        }
+        else {
+            usernames.add(Register.this.et_username.getText().toString());
+            System.out.println(usernames.get(0));
+            passwordArray();
+            Intent intent = new Intent(this, MainMenu.class);
+            startActivity(intent);
+        }
+
+    }
+
+    public void passwordArray(){
+        passwords.add(Register.this.et_password.getText().toString());
+        System.out.println(passwords.get(0));
     }
 
     public boolean validate() {
