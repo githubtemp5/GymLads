@@ -12,7 +12,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.MediaController;
 import android.widget.Toast;
-
+// this graphical user interface will display the workout details of the plan which is session 
 
 public class SessionGUI extends AppCompatActivity {
 
@@ -29,6 +29,7 @@ public class SessionGUI extends AppCompatActivity {
 
         PlanListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
+                // using the if statement to check if any item is selected on the list 
 
                 if(position==0){
                     currentlySelected = "mon";
