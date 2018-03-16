@@ -7,7 +7,7 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class personalisedPlan extends AppCompatActivity {
-
+//personalised plan where it will have plans for the seven days of the week based on the user 
     private TextView heading1;
     private TextView heading11;
     private TextView heading12;
@@ -23,7 +23,7 @@ public class personalisedPlan extends AppCompatActivity {
 
     }
 
-    public void updateLabels(String day){
+    public void updateLabels(String day){ 
         heading1 = (TextView) findViewById(R.id.heading1);
         heading11 = (TextView) findViewById(R.id.heading11);
         heading12 = (TextView) findViewById(R.id.heading12);
@@ -33,7 +33,7 @@ public class personalisedPlan extends AppCompatActivity {
         heading22 = (TextView) findViewById(R.id.heading22);
         heading23 = (TextView) findViewById(R.id.heading23);
 
-        if(day.equals("mon")){
+        if(day.equals("mon")){// if statement to choose which plan is going to the user
             heading1.setText("Cardio Exercises");
             heading11.setText("Running 20 minutes");
             heading12.setText("Rowing 20 minutes");
@@ -44,7 +44,7 @@ public class personalisedPlan extends AppCompatActivity {
             heading23.setText("Skipping for 10 mins");
 
         }
-        else if (day.equals("tue")){
+        else if (day.equals("tue")){ 
             heading1.setText("Leg Session 3sets of 15 reps");
             heading11.setText("Leg Raises");
             heading12.setText("Squats 3 sets of 15 reps");
