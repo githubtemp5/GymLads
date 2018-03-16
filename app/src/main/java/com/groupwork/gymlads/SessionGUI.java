@@ -17,7 +17,7 @@ public class SessionGUI extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_session_gui);
-
+//days of the week inputted as string.This is linked with the personalised plan
         String[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
         ListAdapter planAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, days);
         ListView PlanListView = (ListView) findViewById(R.id.PlanListView);
