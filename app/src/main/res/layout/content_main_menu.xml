@@ -157,6 +157,7 @@
             android:layout_alignEnd="@+id/progressReportButton"
             android:layout_alignRight="@+id/progressReportButton"
             android:text="Weight Tracker" />
+
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
