@@ -36,14 +36,22 @@ public class Register extends AppCompatActivity {
         et_password = (EditText) findViewById(R.id.password);
         et_cpassword = (EditText) findViewById(R.id.cpassword);
         termsCheckBox = (CheckBox) findViewById(R.id.termsCheckBox);
+        cancelButton = (Button) findViewById(R.id.cancelButton);
+        cancelButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                cancel();
+        }
+        });
+
         regButton = (Button) findViewById(R.id.regButton);
         regButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 register();
             }
-        });
-    }
+        
+    });}
 
     public void register() {
         initialise();
@@ -52,6 +60,11 @@ public class Register extends AppCompatActivity {
         } else {
             onSignupSuccess();
         }
+    }
+
+    public void cancel(){
+        Intent intent = new Intent(this, HomeScreen.class);
+        startActivity(intent);
     }
 
     public void onSignupSuccess() {
