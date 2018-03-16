@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button loginButton;
     private EditText usernameBox;
     private EditText passwordBox;
-
+//vaidate information of the user for the login 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
