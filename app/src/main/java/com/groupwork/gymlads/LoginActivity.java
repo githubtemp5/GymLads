@@ -3,6 +3,7 @@ package com.groupwork.gymlads;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -43,6 +44,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button loginButton;
     private EditText usernameBox;
     private EditText passwordBox;
+    private TextView errorLabel;
 //vaidate information of the user for the login 
 
     @Override
@@ -53,16 +55,34 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         loginButton = (Button) findViewById(R.id.signingInButton);
         usernameBox = (EditText) findViewById(R.id.username_text_box);
-        //passwordBox = (EditText) findViewById(R.id.loginPasswordBox);
+        passwordBox = (EditText) findViewById(R.id.login_password_box);
+        errorLabel = findViewById(R.id.error_Label);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String username = LoginActivity.this.usernameBox.getText().toString();
-               // String password = LoginActivity.this.passwordBox.getText().toString();
+                String password = LoginActivity.this.passwordBox.getText().toString();
 
-                System.out.println(username+"ASDASDAS");
-              //  System.out.println(password+"APASSS");
+                for (String user:Register.usernames){
+                    if(user.equals(username)){
+                        int index = Register.usernames.indexOf(user);
+                        if(password.equals(Register.passwords.get(index))){
+                            errorLabel.setText("");
+
+                            Intent i = new Intent(getApplicationContext(), com.groupwork.gymlads.MainMenu.class);
+                            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            startActivity(i);
+                        }
+                        else{
+                            errorLabel.setText("Invalid email or password");
+
+                        }
+                    }
+
+
+                }
+
 
             }
         });

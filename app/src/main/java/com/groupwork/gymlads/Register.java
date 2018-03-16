@@ -96,7 +96,7 @@ public class Register extends AppCompatActivity {
             et_cpassword.setText(null);
             termsCheckBox.setChecked(false);
             //swaps the activity to the main menu
-            Intent intent = new Intent(this, MainMenu.class);
+            Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         }
 
