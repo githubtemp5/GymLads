@@ -15,10 +15,13 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 
 public class Register extends AppCompatActivity {
     private EditText et_name, et_email, et_username, et_password, et_cpassword;
     private String name, email, username, password, cpassword;
+    public static ArrayList<String> usernames = new ArrayList<String>();
     Button regButton;
     CheckBox termsCheckBox;
 
@@ -51,7 +54,9 @@ public class Register extends AppCompatActivity {
     }
 
     public void onSignupSuccess() {
-        Intent intent = new Intent(this, Session.class);
+        usernames.add(Register.this.et_username.getText().toString());
+        System.out.println(usernames.get(0));
+        Intent intent = new Intent(this, MainMenu.class);
         startActivity(intent);
     }
 
