@@ -8,7 +8,9 @@ import android.provider.ContactsContract;
 
 //import org.mariadb.jdbc.MariaDbConnection;
 //import org.mariadb.jdbc.MariaDbStatement;
-
+//this file of java is where we are trying to establish connection to the database where weill be storing user information
+//which are important to our application 
+//
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
 import java.sql.*;
@@ -58,7 +60,8 @@ public class Database implements DatabaseInterface {
 //        }
 //
 //    }
-
+//encrypting the data when passing that data to the database to check if it is vaild 
+    
     public String encrypt(String pass){
         return pass;
     }
@@ -77,7 +80,7 @@ public class Database implements DatabaseInterface {
 
 
 
-
+//query design, which will check the data in the database
     public ResultSet selectQuery(String query){
         ResultSet rs = null;
         try{
