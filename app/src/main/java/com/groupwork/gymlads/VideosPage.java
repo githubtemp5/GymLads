@@ -29,7 +29,7 @@ public class VideosPage extends AppCompatActivity {
         videoView = (VideoView) findViewById(R.id.videoView);
         listView = (ListView) findViewById(R.id.listView);
 
-        videos.add("Push Up \n Hello this is a description for the exercise");
+        videos.add("Push up \n Benefits: Works on your triceps and chest. \n Risks: Way result in lower back pain.");
         videos.add("Sit up \n Benefits:This exercise will help you alot for your your upper body strength. \n Risks: Full sit-ups may cause back pain and arching of the lower back, increasing the risk of back injury.");
         videos.add("Cyclying \n This exercise will help you with your abs and legs.");
 
