@@ -1,0 +1,29 @@
+create database gymLads 
+
+create table UserInfo(
+userID Int(10) NOT NULL, 
+userName varchar(20) NOT NULL,
+userSurname varchar(20) NOT NULL,
+userGender varchar(6) NOT NULL, 
+userAge int(3) NOT NULL, 
+userEmail varchar(20) NOT NULL, 
+userPassword varchar(20) NOT NULL, 
+PRIMARY KEY (USERID)
+);
+
+Foreigin key(exerciseID) NOT NULL, 
+Foreigin key (planID) NOT NULL, 
+
+create table planInfo(
+PlanID Int(10) NOT NULL,
+planName varchar(20) NOT NULL,
+PRIMARY KEY (PlanID)
+
+);
+
+create table exerciseInfo(
+exerciseID INT(10),
+exerciseName varchar(50),
+exerciseTimeLimt int(4),
+PRIMARY KEY(exerciseID)
+);
