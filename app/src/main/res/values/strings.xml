@@ -38,4 +38,10 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="login_label">Username</string>
+    <string name="login_password_box">Password</string>
+    <string name="signin_Button">Login</string>
+    <string name="login_Password_Box">Password</string>
+    <string name="username_login_label">Username</string>
+    <string name="login_password_label">Password</string>
 </resources>
