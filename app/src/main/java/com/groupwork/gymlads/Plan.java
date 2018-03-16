@@ -7,7 +7,8 @@ import java.util.ArrayList;
  */
 
 public class Plan {
-
+// class for the plan to loop around the plan based on the user input 
+    // based on their input 
     private String planName;
     private Session[] sessions;
 
