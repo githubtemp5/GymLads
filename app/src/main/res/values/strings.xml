@@ -44,4 +44,9 @@
     <string name="login_Password_Box">Password</string>
     <string name="username_login_label">Username</string>
     <string name="login_password_label">Password</string>
+    <string name="title_activity_weight_tracker">weightTracker</string>
+    <string name="desc2">Yesterday: 150(lbs)</string>
+    <string name="dwsc3">Today: 100(lbs)</string>
+    <string name="desc4">Tracker</string>
+    <string name="desc1">Calories burnt over time</string>
 </resources>

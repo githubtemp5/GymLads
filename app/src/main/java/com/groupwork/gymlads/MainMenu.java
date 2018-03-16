@@ -16,6 +16,7 @@ public class MainMenu extends AppCompatActivity {
     private ImageButton videoDemButton;
     private ImageButton weightTrackButton;
     private ImageButton perPlanButton;
+    private ImageButton progressReportBtn;
     //private ImageButton
 
     @Override
@@ -29,6 +30,17 @@ public class MainMenu extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(getApplicationContext(), com.groupwork.gymlads.ProfileActivity.class);
+                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(i);
+                    }
+                }
+        );
+        progressReportBtn = (ImageButton) findViewById(R.id.progressReportButton);
+        progressReportBtn.setOnClickListener(
+                new ImageButton.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(getApplicationContext(), com.groupwork.gymlads.weightTracker.class);
                         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(i);
                     }
