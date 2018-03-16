@@ -11,7 +11,9 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 import java.util.ArrayList;
-
+// video class
+// this class bind the videos and xml files together to have pleasant viewing of the video
+//
 
 public class VideosPage extends AppCompatActivity {
 
@@ -32,7 +34,7 @@ public class VideosPage extends AppCompatActivity {
         videos.add("Squat \n Benefits: Building leg muscles including hamstrings. \n Risks: Way result in lower back pain.");
         videos.add("Sit up \n Benefits:This exercise will help you alot for your your upper body strength. \n Risks: Full sit-ups may cause back pain and arching of the lower back, increasing the risk of back injury.");
         videos.add("Cyclying \n This exercise will help you with your abs and legs.");
-
+//using the listview to check any of the listed item is clicked if it is clicked then display the assigned video 
         adapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1,videos);
         listView.setAdapter(adapter);
 
