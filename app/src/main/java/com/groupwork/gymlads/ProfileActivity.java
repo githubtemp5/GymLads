@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.VideoView;
-
+// this class which update user profile information 
 public class ProfileActivity extends AppCompatActivity {  //extends Activity class
 
     private static final String TAG ="gymladMessage";    //log tag, logs the current
@@ -24,7 +24,7 @@ public class ProfileActivity extends AppCompatActivity {  //extends Activity cla
     //First calls the method called onCreate when you begin the app
     //might also have onDestroy method so when you close the app, it saves the current data, uploads to the database and so on
 
-    @Override
+    @Override// assigning the textbox values which are required to check if there is vaild input 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
@@ -53,7 +53,7 @@ public class ProfileActivity extends AppCompatActivity {  //extends Activity cla
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         genderDropdown.setAdapter(adapter);
 
-        //Update Details Button
+        //Update Details Button which will update the detail of the user if the user provide more information 
         updButton = findViewById(R.id.updateButton);
 
         updButton.setOnClickListener(
@@ -80,7 +80,8 @@ public class ProfileActivity extends AppCompatActivity {  //extends Activity cla
 
     }
 
-    //This methood grabs the user details currently displayed in the userGUI and if any changes are made to it, provides an option to update the information in the database.
+    //This methood grabs the user details currently displayed in the userGUI and if any changes are
+    //made to it, provides an option to update the information in the database.
     public String retrieveAndValidateDetails(){
         String errorMessage = "";
         boolean fullNameCheck=false;
@@ -160,7 +161,7 @@ public class ProfileActivity extends AppCompatActivity {  //extends Activity cla
 
 
 
-
+// defualt activity of the page when the user enter the page 
     }
     @Override
     protected void onStart() {
