@@ -33,6 +33,7 @@ public class Exercise {
     public int getExerciseReps() {
         return exerciseReps;
     }
+    // exercise page 
 
     public String getExerciseInfo() {
         return exerciseInfo;
