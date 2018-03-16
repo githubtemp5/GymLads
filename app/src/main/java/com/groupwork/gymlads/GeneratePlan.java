@@ -3,6 +3,7 @@ package com.groupwork.gymlads;
 /**
  * Created by mint on 07/03/18.
  */
+//this class is where the plans are generate based on users input 
 
 public class GeneratePlan {
     private User user;
