@@ -77,6 +77,12 @@ public class Register extends AppCompatActivity {
             usernames.add(Register.this.et_username.getText().toString());
             System.out.println(usernames.get(0));
             passwordArray();
+            et_username.setText(null);
+            et_password.setText(null);
+            et_name.setText(null);
+            et_email.setText(null);
+            et_cpassword.setText(null);
+            termsCheckBox.setChecked(false);
             Intent intent = new Intent(this, MainMenu.class);
             startActivity(intent);
         }
