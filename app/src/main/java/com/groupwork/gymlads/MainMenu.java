@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import java.io.FileReader;
-
+// this is the page where all the pages are linked from the main choice menu 
+// when the user click on the picture button they will be let on to the next page 
 public class MainMenu extends AppCompatActivity {
 
     private FileReader fr;
@@ -21,7 +22,7 @@ public class MainMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_menu);
+        setContentView(R.layout.activity_main_menu);// deploying the listener to check which button are click or or just be stand by mode 
         //initialise();
         userProfileButton = (ImageButton) findViewById(R.id.userProfileButton);
         userProfileButton.setOnClickListener(
@@ -35,7 +36,7 @@ public class MainMenu extends AppCompatActivity {
                 }
         );
 
-        userPlanButton = (ImageButton) findViewById(R.id.personalisedPlanButton);
+        userPlanButton = (ImageButton) findViewById(R.id.personalisedPlanButton);//  user plan button which is linked to the userplan page
         userPlanButton.setOnClickListener(
                 new ImageButton.OnClickListener(){
                     @Override
@@ -44,8 +45,8 @@ public class MainMenu extends AppCompatActivity {
         }
         );
 
-        videoDemButton = (ImageButton) findViewById(R.id.videoDemonButton);
-        videoDemButton.setOnClickListener(
+        videoDemButton = (ImageButton) findViewById(R.id.videoDemonButton);//video demo button which is linked to another page 
+        videoDemButton.setOnClickListener(                                  //when click on the button it will intent to the next page
                 new ImageButton.OnClickListener(){
                     @Override
                     public void onClick(View v){
@@ -56,8 +57,8 @@ public class MainMenu extends AppCompatActivity {
                 }
         );
 
-        weightTrackButton = (ImageButton) findViewById(R.id.weightTrackerButton);
-        weightTrackButton.setOnClickListener(
+        weightTrackButton = (ImageButton) findViewById(R.id.weightTrackerButton);// weight tracker page is linked to the image button when click on 
+        weightTrackButton.setOnClickListener(                                   // when click on the button it will intent to the next page 
                 new ImageButton.OnClickListener(){
                     @Override
                     public void onClick(View v){
@@ -68,7 +69,7 @@ public class MainMenu extends AppCompatActivity {
                 }
         );
 
-        perPlanButton = (ImageButton) findViewById(R.id.personalisedPlanButton);
+        perPlanButton = (ImageButton) findViewById(R.id.personalisedPlanButton); // perosnalised plan image button which will lead to another page 
         perPlanButton.setOnClickListener(
                 new ImageButton.OnClickListener(){
                     @Override
